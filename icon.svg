@@ -6,6 +6,318 @@
     >
       
     <style type="text/css">
+      .plant {
+        stroke: black;
+        stroke-width: 0.0125;
+      }
+      .plant-stem {
+        fill: none;
+      }
+    </style>
+    
+    <g
+      class="plant"
+      transform="
+        rotate(0)
+        translate(0, 0.2)
+      "
+    >
+      <path class="plant-stem"
+        d="
+          M 0,0
+          L 0,0.25
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 0.075,0.35
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 -0.075,0.35
+        "
+      />
+    </g>
+  
+
+    <g
+      class="plant"
+      transform="
+        rotate(45)
+        translate(0, 0.2)
+      "
+    >
+      <path class="plant-stem"
+        d="
+          M 0,0
+          L 0,0.25
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 0.075,0.35
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 -0.075,0.35
+        "
+      />
+    </g>
+  
+
+    <g
+      class="plant"
+      transform="
+        rotate(90)
+        translate(0, 0.2)
+      "
+    >
+      <path class="plant-stem"
+        d="
+          M 0,0
+          L 0,0.25
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 0.075,0.35
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 -0.075,0.35
+        "
+      />
+    </g>
+  
+
+    <g
+      class="plant"
+      transform="
+        rotate(135)
+        translate(0, 0.2)
+      "
+    >
+      <path class="plant-stem"
+        d="
+          M 0,0
+          L 0,0.25
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 0.075,0.35
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 -0.075,0.35
+        "
+      />
+    </g>
+  
+
+    <g
+      class="plant"
+      transform="
+        rotate(180)
+        translate(0, 0.2)
+      "
+    >
+      <path class="plant-stem"
+        d="
+          M 0,0
+          L 0,0.25
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 0.075,0.35
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 -0.075,0.35
+        "
+      />
+    </g>
+  
+
+    <g
+      class="plant"
+      transform="
+        rotate(225)
+        translate(0, 0.2)
+      "
+    >
+      <path class="plant-stem"
+        d="
+          M 0,0
+          L 0,0.25
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 0.075,0.35
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 -0.075,0.35
+        "
+      />
+    </g>
+  
+
+    <g
+      class="plant"
+      transform="
+        rotate(270)
+        translate(0, 0.2)
+      "
+    >
+      <path class="plant-stem"
+        d="
+          M 0,0
+          L 0,0.25
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 0.075,0.35
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 -0.075,0.35
+        "
+      />
+    </g>
+  
+
+    <g
+      class="plant"
+      transform="
+        rotate(315)
+        translate(0, 0.2)
+      "
+    >
+      <path class="plant-stem"
+        d="
+          M 0,0
+          L 0,0.25
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 0.075,0.35
+        "
+      />
+      <path class="plant-stem"
+        d="
+          M 0,0.225
+          C 0,0.2 0,0.3 -0.075,0.35
+        "
+      />
+    </g>
+  
+  
+      
+    <style type="text/css">
+      .gear {
+        stroke: black;
+        stroke-width: 0.015;
+      }
+      .gear-tooth {
+        fill: purple;
+      }
+    </style>
+    <g class="gear">
+      
+    <g
+      class="gear-tooth"
+      transform="rotate(22.5)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+
+    <g
+      class="gear-tooth"
+      transform="rotate(67.5)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+
+    <g
+      class="gear-tooth"
+      transform="rotate(112.5)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+
+    <g
+      class="gear-tooth"
+      transform="rotate(157.5)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+
+    <g
+      class="gear-tooth"
+      transform="rotate(202.49999999999997)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+
+    <g
+      class="gear-tooth"
+      transform="rotate(247.49999999999997)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+
+    <g
+      class="gear-tooth"
+      transform="rotate(292.50000000000006)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+
+    <g
+      class="gear-tooth"
+      transform="rotate(337.49999999999994)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+    </g>
+  
+      
+    <style type="text/css">
       .moon {
         stroke: black;
         stroke-width: 0.005;
@@ -145,83 +457,6 @@
       />
     </g>
   
-  
-      
-    <style type="text/css">
-      .gear {
-        stroke: black;
-        stroke-width: 0.015;
-      }
-      .gear-tooth {
-        fill: purple;
-      }
-    </style>
-    <g class="gear">
-      
-    <g
-      class="gear-tooth"
-      transform="rotate(22.5)"
-    >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
-    </g>
-  
-
-    <g
-      class="gear-tooth"
-      transform="rotate(67.5)"
-    >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
-    </g>
-  
-
-    <g
-      class="gear-tooth"
-      transform="rotate(112.5)"
-    >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
-    </g>
-  
-
-    <g
-      class="gear-tooth"
-      transform="rotate(157.5)"
-    >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
-    </g>
-  
-
-    <g
-      class="gear-tooth"
-      transform="rotate(202.49999999999997)"
-    >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
-    </g>
-  
-
-    <g
-      class="gear-tooth"
-      transform="rotate(247.49999999999997)"
-    >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
-    </g>
-  
-
-    <g
-      class="gear-tooth"
-      transform="rotate(292.50000000000006)"
-    >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
-    </g>
-  
-
-    <g
-      class="gear-tooth"
-      transform="rotate(337.49999999999994)"
-    >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
-    </g>
-  
-    </g>
   
     </svg>
   
