@@ -2,39 +2,76 @@ module.exports = solarpunkIcon
 
 function solarpunkIcon () {
   return `
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  viewBox="-1 -1 2 2"
->
-  ${moon.style}
-  ${range({ start: 0, stop: 1, step: 1/8 })
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="-1 -1 2 2"
+    >
+      ${moons({ moonRadius: 0.1, centerRadius: 0.7 })}
+      ${gears({ centerRadius: 0.15, toothLength: 0.3, toothWidth: 0.2 })}
+    </svg>
+  `
+}
+
+function gears ({ centerRadius, toothLength, toothWidth }) {
+  return `
+    <style type="text/css">
+      .gear {
+        stroke: black;
+        stroke-width: ${toothLength / 20};
+      }
+      .gear-tooth {
+        fill: purple;
+      }
+    </style>
+    <g class="gear">
+      ${range({ start: 0, stop: 1, step: 1/8 })
+          .map(index => gearTooth({
+            angle: (1/16 + index) * 2 * Math.PI,
+            offset: centerRadius,
+            length: toothLength,
+            width: toothWidth
+          }))
+          .join('\n')
+       }
+    </g>
+  `
+}
+
+function gearTooth ({ angle, offset, length, width }) {
+  return `
+    <g
+      class="gear-tooth"
+      transform="rotate(${angle * 180 / Math.PI})"
+    >
+      <rect x="${-width / 2}" y="${offset}" height="${length}" width="${width}" />
+    </g>
+  `
+}
+
+function moons ({ moonRadius, centerRadius }) {
+  return `
+    <style type="text/css">
+      .moon {
+        stroke: black;
+        stroke-width: ${moonRadius / 20};
+      }
+      .moon-front {
+        fill: white;
+      }
+      .moon-back {
+        fill: purple;
+      }
+    </style>
+    ${range({ start: 0, stop: 1, step: 1/8 })
       .map(index => moon({
-        radius: 0.1,
-        center: rotate({ angle: index * 2 * Math.PI, point: { x: 0, y: 0.5 } }),
+        radius: moonRadius,
+        center: rotate({ angle: index * 2 * Math.PI, point: { x: 0, y: centerRadius } }),
         phase: index
       }))
       .join('\n')
-   }
-</svg>
-`
-}
-
-function gear ({ center, numThreads, threadLength, centerLength }) {
-  return `
-<g>
-    
-</g>
-`
-}
-
-function rotate ({ center = { x: 0, y: 0}, angle, point }) {
-  const a = Math.atan2(point.y - center.y, point.x - center.x)
-  const r = Math.sqrt(Math.pow(point.x - center.x, 2) + Math.pow(point.y - center.y, 2))
-  return {
-    x: r * Math.cos(a + angle),
-    y: r * Math.sin(a + angle)
-  }
+    }
+  `
 }
 
 // inspired by https://github.com/tingletech/moon-phase
@@ -63,27 +100,9 @@ function moon ({ radius, center, phase }) {
   // http://www.w3.org/TR/SVG/paths.html#PathDataEllipticalArcCommands
   // http://www.i-programmer.info/programming/graphics-and-imaging/3254-svg-javascript-and-the-dom.html
 
-    /*
-  var d = "m100,0 ";
-  d = d + "a" + mag + ",20 0 1," + sweep[0] + " 0,150 ";
-  d = d + "a20,20 0 1," + sweep[1] + " 0,-150";
-  */
-
   var r = radius / 5
 
   return `
-    <style type="text/css">
-      .moon {
-        stroke: black;
-        stroke-width: ${radius / 20};
-      }
-      .moon-front {
-        fill: white;
-      }
-      .moon-back {
-        fill: purple;
-      }
-    </style>
     <g class="moon">
       <path
         class="moon-back"
@@ -99,9 +118,17 @@ function moon ({ radius, center, phase }) {
       />
     </g>
   `
-
-  // d="m100,0 a20,20 0 1,1 0,150 a20,20 0 1,1 0,-150"
 }
+
+function rotate ({ center = { x: 0, y: 0}, angle, point }) {
+  const a = Math.atan2(point.y - center.y, point.x - center.x)
+  const r = Math.sqrt(Math.pow(point.x - center.x, 2) + Math.pow(point.y - center.y, 2))
+  return {
+    x: r * Math.cos(a + angle),
+    y: r * Math.sin(a + angle)
+  }
+}
+
 
 // https://stackoverflow.com/a/44957114
 function range ({ start = 0, stop, step = 1 }) {

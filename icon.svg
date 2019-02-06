@@ -1,11 +1,10 @@
 
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  viewBox="-1 -1 2 2"
->
-  undefined
-  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="-1 -1 2 2"
+    >
+      
     <style type="text/css">
       .moon {
         stroke: black;
@@ -18,216 +17,211 @@
         fill: purple;
       }
     </style>
+    
     <g class="moon">
       <path
         class="moon-back"
-        d="M 3.061616997868383e-17,0.45
+        d="M 4.286263797015736e-17,0.6499999999999999
            a 0.02,0.02 0 1,1 0,0.1
            a 0.02,0.02 0 1,1 0,-0.1"
       />
       <path
         class="moon-front"
-        d="M 3.061616997868383e-17,0.45
+        d="M 4.286263797015736e-17,0.6499999999999999
            a 0.02,0.02 0 1,1 0,0.1
            a 0.02,0.02 0 1,0 0,-0.1"
       />
     </g>
   
 
-    <style type="text/css">
-      .moon {
-        stroke: black;
-        stroke-width: 0.005;
-      }
-      .moon-front {
-        fill: white;
-      }
-      .moon-back {
-        fill: purple;
-      }
-    </style>
     <g class="moon">
       <path
         class="moon-back"
-        d="M -0.35355339059327373,0.3035533905932738
+        d="M -0.4949747468305832,0.4449747468305833
            a 0.02,0.02 0 1,1 0,0.1
            a 0.02,0.02 0 1,1 0,-0.1"
       />
       <path
         class="moon-front"
-        d="M -0.35355339059327373,0.3035533905932738
+        d="M -0.4949747468305832,0.4449747468305833
            a 0.01,0.02 0 1,1 0,0.1
            a 0.02,0.02 0 1,0 0,-0.1"
       />
     </g>
   
 
-    <style type="text/css">
-      .moon {
-        stroke: black;
-        stroke-width: 0.005;
-      }
-      .moon-front {
-        fill: white;
-      }
-      .moon-back {
-        fill: purple;
-      }
-    </style>
     <g class="moon">
       <path
         class="moon-back"
-        d="M -0.5,-0.04999999999999994
+        d="M -0.7,-0.04999999999999992
            a 0.02,0.02 0 1,1 0,0.1
            a 0.02,0.02 0 1,1 0,-0.1"
       />
       <path
         class="moon-front"
-        d="M -0.5,-0.04999999999999994
+        d="M -0.7,-0.04999999999999992
            a 0,0.02 0 1,1 0,0.1
            a 0.02,0.02 0 1,0 0,-0.1"
       />
     </g>
   
 
-    <style type="text/css">
-      .moon {
-        stroke: black;
-        stroke-width: 0.005;
-      }
-      .moon-front {
-        fill: white;
-      }
-      .moon-back {
-        fill: purple;
-      }
-    </style>
     <g class="moon">
       <path
         class="moon-back"
-        d="M -0.35355339059327384,-0.4035533905932737
+        d="M -0.49497474683058335,-0.5449747468305832
            a 0.02,0.02 0 1,1 0,0.1
            a 0.02,0.02 0 1,1 0,-0.1"
       />
       <path
         class="moon-front"
-        d="M -0.35355339059327384,-0.4035533905932737
+        d="M -0.49497474683058335,-0.5449747468305832
            a 0.01,0.02 0 1,0 0,0.1
            a 0.02,0.02 0 1,0 0,-0.1"
       />
     </g>
   
 
-    <style type="text/css">
-      .moon {
-        stroke: black;
-        stroke-width: 0.005;
-      }
-      .moon-front {
-        fill: white;
-      }
-      .moon-back {
-        fill: purple;
-      }
-    </style>
     <g class="moon">
       <path
         class="moon-back"
-        d="M -9.184850993605148e-17,-0.55
+        d="M -1.2858791391047207e-16,-0.75
            a 0.02,0.02 0 1,1 0,0.1
            a 0.02,0.02 0 1,1 0,-0.1"
       />
       <path
         class="moon-front"
-        d="M -9.184850993605148e-17,-0.55
+        d="M -1.2858791391047207e-16,-0.75
            a 0.02,0.02 0 1,0 0,0.1
            a 0.02,0.02 0 1,0 0,-0.1"
       />
     </g>
   
 
-    <style type="text/css">
-      .moon {
-        stroke: black;
-        stroke-width: 0.005;
-      }
-      .moon-front {
-        fill: white;
-      }
-      .moon-back {
-        fill: purple;
-      }
-    </style>
     <g class="moon">
       <path
         class="moon-back"
-        d="M 0.3535533905932737,-0.40355339059327383
+        d="M 0.4949747468305831,-0.5449747468305833
            a 0.02,0.02 0 1,1 0,0.1
            a 0.02,0.02 0 1,1 0,-0.1"
       />
       <path
         class="moon-front"
-        d="M 0.3535533905932737,-0.40355339059327383
+        d="M 0.4949747468305831,-0.5449747468305833
            a 0.01,0.02 0 1,1 0,0.1
            a 0.02,0.02 0 1,1 0,-0.1"
       />
     </g>
   
 
-    <style type="text/css">
-      .moon {
-        stroke: black;
-        stroke-width: 0.005;
-      }
-      .moon-front {
-        fill: white;
-      }
-      .moon-back {
-        fill: purple;
-      }
-    </style>
     <g class="moon">
       <path
         class="moon-back"
-        d="M 0.5,-0.05000000000000013
+        d="M 0.7,-0.050000000000000176
            a 0.02,0.02 0 1,1 0,0.1
            a 0.02,0.02 0 1,1 0,-0.1"
       />
       <path
         class="moon-front"
-        d="M 0.5,-0.05000000000000013
+        d="M 0.7,-0.050000000000000176
            a 0,0.02 0 1,1 0,0.1
            a 0.02,0.02 0 1,1 0,-0.1"
       />
     </g>
   
 
-    <style type="text/css">
-      .moon {
-        stroke: black;
-        stroke-width: 0.005;
-      }
-      .moon-front {
-        fill: white;
-      }
-      .moon-back {
-        fill: purple;
-      }
-    </style>
     <g class="moon">
       <path
         class="moon-back"
-        d="M 0.35355339059327384,0.3035533905932737
+        d="M 0.49497474683058335,0.44497474683058313
            a 0.02,0.02 0 1,1 0,0.1
            a 0.02,0.02 0 1,1 0,-0.1"
       />
       <path
         class="moon-front"
-        d="M 0.35355339059327384,0.3035533905932737
+        d="M 0.49497474683058335,0.44497474683058313
            a 0.01,0.02 0 1,0 0,0.1
            a 0.02,0.02 0 1,1 0,-0.1"
       />
     </g>
   
-</svg>
+  
+      
+    <style type="text/css">
+      .gear {
+        stroke: black;
+        stroke-width: 0.015;
+      }
+      .gear-tooth {
+        fill: purple;
+      }
+    </style>
+    <g class="gear">
+      
+    <g
+      class="gear-tooth"
+      transform="rotate(22.5)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
 
+    <g
+      class="gear-tooth"
+      transform="rotate(67.5)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+
+    <g
+      class="gear-tooth"
+      transform="rotate(112.5)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+
+    <g
+      class="gear-tooth"
+      transform="rotate(157.5)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+
+    <g
+      class="gear-tooth"
+      transform="rotate(202.49999999999997)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+
+    <g
+      class="gear-tooth"
+      transform="rotate(247.49999999999997)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+
+    <g
+      class="gear-tooth"
+      transform="rotate(292.50000000000006)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+
+    <g
+      class="gear-tooth"
+      transform="rotate(337.49999999999994)"
+    >
+      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+    </g>
+  
+    </g>
+  
+    </svg>
+  

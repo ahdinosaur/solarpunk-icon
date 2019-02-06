@@ -4,20 +4,14 @@
   "description": "a solarpunk icon generated from JavaScript code",
   "main": "index.js",
   "scripts": {
-    "start": "node-dev example",
     "style:format": "prettier-standard '**/*.js' '**/*.md'",
     "style:lint": "standard",
     "style": "npm-run-all -s style:format style:lint",
-    "test:deps": "dependency-check . && dependency-check . --extra --no-dev -i es2040",
+    "test:deps": "dependency-check . && dependency-check . --extra --no-dev",
     "test:node": "ava",
     "test:coverage": "nyc npm run test:node",
     "test:coverage:report": "nyc report --reporter=lcov npm run test:node",
     "test": "npm-run-all -s test:node style:lint test:deps"
-  },
-  "browserify": {
-    "transform": [
-      "es2040"
-    ]
   },
   "lint-staged": {
     "linters": {
@@ -52,13 +46,9 @@
     "dependency-check": "^3.1.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.5",
-    "node-dev": "^3.1.3",
     "npm-run-all": "^4.0.1",
     "nyc": "^11.7.1",
     "prettier-standard": "^8.0.1",
     "standard": "^11.0.1"
-  },
-  "dependencies": {
-    "es2040": "^1.2.3"
   }
 }
