@@ -2,13 +2,7 @@
 
 a solarpunk icon generated from JavaScript code
 
-```shell
-npm install --save solarpunk-icon
-```
-
-## usage
-
-### `solarpunkIcon = require('solarpunk-icon')`
+![solarpunk icon](./icon.svg)
 
 ## license
 
