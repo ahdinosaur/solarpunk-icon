@@ -38,9 +38,6 @@ and [`%lfFGMoRpFhQdejot63etXBzd/6HAl6p0mtMX3XGLL+E=.sha256`](https://viewer.scut
 >
 > ![solarpunk icon color](./icons/1-color.svg)
 
-![solarpunk-icon-color.svg](&rbh9+JUDECZIq4SIDy8rsn31ZVi7Wm5VkRUDCP7Zglw=.sha256)
->
-
 ## license
 
 The Apache License
