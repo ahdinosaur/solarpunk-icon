@@ -9,7 +9,7 @@ function solarpunkIcon () {
     >
       ${plants({ size: 0.25, offsetRadius: 0.2 })}
       ${gear({ offsetRadius: 0.15, toothLength: 0.3, toothWidth: 0.2 })}
-      ${moons({ moonRadius: 0.1, offsetRadius: 0.7 })}
+      ${moons({ moonRadius: 0.2, offsetRadius: 0.7 })}
     </svg>
   `
 }
@@ -60,6 +60,9 @@ function plants ({ size, offsetRadius }) {
       .plant-stem {
         fill: none;
       }
+      .plant-leaf {
+        fill: green;
+      }
     </style>
     ${range({ start: 0, stop: 1, step: 1/8 })
         .map(index => plant({
@@ -87,19 +90,34 @@ function plant ({ size, angle, offsetRadius }) {
           L 0,${size}
         "
       />
-      <path class="plant-stem"
-        d="
-          M 0,${size * 0.9}
-          C 0,${size * 0.8} 0,${size * 1.2} ${size * 0.3},${size * 1.4}
-        "
-      />
-      <path class="plant-stem"
-        d="
-          M 0,${size * 0.9}
-          C 0,${size * 0.8} 0,${size * 1.2} ${size * -0.3},${size * 1.4}
-        "
-      />
+      ${plantStem({ size, direction: 1 })}
+      ${plantStem({ size, direction: -1 })}
+      ${plantLeaf({ size, direction: 1 })}
+      ${plantLeaf({ size, direction: -1 })}
     </g>
+  `
+}
+
+function plantStem ({ size, direction }) {
+  return `
+    <path class="plant-stem"
+      d="
+        M 0,${size * 0.9}
+        C 0,${size * 0.8} 0,${size * 1.2} ${size * direction * 0.3},${size * 1.4}
+      "
+    />
+  `
+}
+
+function plantLeaf ({ size, direction }) {
+  return `
+    <path class="plant-leaf"
+      d="
+        M ${size * direction * 0.3},${size * 1.4}
+        a ${size},${size} -45 0,0 ${size * direction * 0.8},${size * 0.6}
+        A ${size},${size} -45 0,0 ${size * direction * 0.3},${size * 1.4}
+      "
+    />
   `
 }
 
