@@ -4,7 +4,7 @@
   "description": "a solarpunk icon generated from JavaScript code",
   "main": "index.js",
   "scripts": {
-    "start": "node example > icon.svg",
+    "start": "node icon.js > icon.svg",
     "style:format": "prettier-standard '**/*.js' '**/*.md'",
     "style:lint": "standard",
     "style": "npm-run-all -s style:format style:lint",
