@@ -16,7 +16,7 @@ from [`%jXO1GEi55llBiPbn6HkrwJYPmmXJpor6qkR0/WgfR7M=.sha256`](https://viewer.scu
 >
 > i've been thinking about how to distill solarpunk into some fundamental icons, here's what i came up with:
 >
-> ![solarpunk icon](./images/1.svg)
+> ![solarpunk icon](./icons/1.svg)
 >
 > here's what i was trying to do:
 >
@@ -36,7 +36,7 @@ and [`%lfFGMoRpFhQdejot63etXBzd/6HAl6p0mtMX3XGLL+E=.sha256`](https://viewer.scut
 
 > with a splash of my favorite colors: purple and teal
 >
-> ![solarpunk icon color](./images/1-color.svg)
+> ![solarpunk icon color](./icons/1-color.svg)
 
 ![solarpunk-icon-color.svg](&rbh9+JUDECZIq4SIDy8rsn31ZVi7Wm5VkRUDCP7Zglw=.sha256)
 >
