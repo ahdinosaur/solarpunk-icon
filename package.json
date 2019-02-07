@@ -28,8 +28,7 @@
     }
   },
   "standard": {
-    "globals": [
-    ]
+    "globals": []
   },
   "repository": {
     "type": "git",

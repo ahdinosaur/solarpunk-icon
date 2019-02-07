@@ -26,15 +26,15 @@ function gear ({ offsetRadius, toothLength, toothWidth }) {
       }
     </style>
     <g class="gear">
-      ${range({ start: 0, stop: 1, step: 1/8 })
-          .map(index => gearTooth({
-            angle: (1/16 + index) * 2 * Math.PI,
-            offset: offsetRadius,
-            length: toothLength,
-            width: toothWidth
-          }))
-          .join('\n')
-       }
+      ${range({ start: 0, stop: 1, step: 1 / 8 })
+    .map(index => gearTooth({
+      angle: (1 / 16 + index) * 2 * Math.PI,
+      offset: offsetRadius,
+      length: toothLength,
+      width: toothWidth
+    }))
+    .join('\n')
+}
     </g>
   `
 }
@@ -64,14 +64,14 @@ function plants ({ size, offsetRadius }) {
         fill: green;
       }
     </style>
-    ${range({ start: 0, stop: 1, step: 1/8 })
-        .map(index => plant({
-          size,
-          angle: index * 2 * Math.PI,
-          offsetRadius
-        }))
-        .join('\n')
-     }
+    ${range({ start: 0, stop: 1, step: 1 / 8 })
+    .map(index => plant({
+      size,
+      angle: index * 2 * Math.PI,
+      offsetRadius
+    }))
+    .join('\n')
+}
   `
 }
 
@@ -135,14 +135,14 @@ function moons ({ moonRadius, offsetRadius }) {
         fill: purple;
       }
     </style>
-    ${range({ start: 0, stop: 1, step: 1/8 })
-      .map(index => moon({
-        radius: moonRadius,
-        center: rotate({ angle: index * 2 * Math.PI, point: { x: 0, y: offsetRadius } }),
-        phase: index
-      }))
-      .join('\n')
-    }
+    ${range({ start: 0, stop: 1, step: 1 / 8 })
+    .map(index => moon({
+      radius: moonRadius,
+      center: rotate({ angle: index * 2 * Math.PI, point: { x: 0, y: offsetRadius } }),
+      phase: index
+    }))
+    .join('\n')
+}
   `
 }
 
@@ -156,7 +156,7 @@ function moon ({ radius, center, phase }) {
   if (phase <= 0.25) {
     sweep = [ 1, 0 ]
     mag = 1 - phase * 4
-  } else if (phase <= 0.50) { 
+  } else if (phase <= 0.50) {
     sweep = [ 0, 0 ]
     mag = (phase - 0.25) * 4
   } else if (phase <= 0.75) {
@@ -165,7 +165,7 @@ function moon ({ radius, center, phase }) {
   } else if (phase <= 1) {
     sweep = [ 0, 1 ]
     mag = (phase - 0.75) * 4
-  } else { 
+  } else {
     throw new Error(`unexpected moon phase: ${phase}`)
   }
 
@@ -192,7 +192,7 @@ function moon ({ radius, center, phase }) {
   `
 }
 
-function rotate ({ center = { x: 0, y: 0}, angle, point }) {
+function rotate ({ center = { x: 0, y: 0 }, angle, point }) {
   const a = Math.atan2(point.y - center.y, point.x - center.x)
   const r = Math.sqrt(Math.pow(point.x - center.x, 2) + Math.pow(point.y - center.y, 2))
   return {
@@ -200,7 +200,6 @@ function rotate ({ center = { x: 0, y: 0}, angle, point }) {
     y: r * Math.sin(a + angle)
   }
 }
-
 
 // https://stackoverflow.com/a/44957114
 function range ({ start = 0, stop, step = 1 }) {
