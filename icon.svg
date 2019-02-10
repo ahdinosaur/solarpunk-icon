@@ -420,77 +420,125 @@
   
       
     <style type="text/css">
-      .gear {
+      .turbine {
         stroke: black;
         stroke-width: 0.015;
       }
-      .gear-tooth {
+      .turbine-blade {
         fill: purple;
       }
     </style>
-    <g class="gear">
+    <g class="turbine">
       
     <g
-      class="gear-tooth"
+      class="turbine-blade"
       transform="rotate(22.5)"
     >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+      <path
+        d="
+          M -0.04,0.05
+          a 0.08,0.3 0 1,0 0.08,0
+          z
+        "
+      />
     </g>
   
 
     <g
-      class="gear-tooth"
+      class="turbine-blade"
       transform="rotate(67.5)"
     >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+      <path
+        d="
+          M -0.04,0.05
+          a 0.08,0.3 0 1,0 0.08,0
+          z
+        "
+      />
     </g>
   
 
     <g
-      class="gear-tooth"
+      class="turbine-blade"
       transform="rotate(112.5)"
     >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+      <path
+        d="
+          M -0.04,0.05
+          a 0.08,0.3 0 1,0 0.08,0
+          z
+        "
+      />
     </g>
   
 
     <g
-      class="gear-tooth"
+      class="turbine-blade"
       transform="rotate(157.5)"
     >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+      <path
+        d="
+          M -0.04,0.05
+          a 0.08,0.3 0 1,0 0.08,0
+          z
+        "
+      />
     </g>
   
 
     <g
-      class="gear-tooth"
+      class="turbine-blade"
       transform="rotate(202.49999999999997)"
     >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+      <path
+        d="
+          M -0.04,0.05
+          a 0.08,0.3 0 1,0 0.08,0
+          z
+        "
+      />
     </g>
   
 
     <g
-      class="gear-tooth"
+      class="turbine-blade"
       transform="rotate(247.49999999999997)"
     >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+      <path
+        d="
+          M -0.04,0.05
+          a 0.08,0.3 0 1,0 0.08,0
+          z
+        "
+      />
     </g>
   
 
     <g
-      class="gear-tooth"
+      class="turbine-blade"
       transform="rotate(292.50000000000006)"
     >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+      <path
+        d="
+          M -0.04,0.05
+          a 0.08,0.3 0 1,0 0.08,0
+          z
+        "
+      />
     </g>
   
 
     <g
-      class="gear-tooth"
+      class="turbine-blade"
       transform="rotate(337.49999999999994)"
     >
-      <rect x="-0.1" y="0.15" height="0.3" width="0.2" />
+      <path
+        d="
+          M -0.04,0.05
+          a 0.08,0.3 0 1,0 0.08,0
+          z
+        "
+      />
     </g>
   
     </g>

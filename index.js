@@ -8,46 +8,53 @@ function solarpunkIcon () {
       viewBox="-1 -1 2 2"
     >
       ${plants({ size: 0.25, offsetRadius: 0.2 })}
-      ${gear({ offsetRadius: 0.15, toothLength: 0.3, toothWidth: 0.2 })}
+      ${turbine({ offsetRadius: 0.05, bladeLength: 0.3, bladeWidth: 0.08 })}
       ${moons({ moonRadius: 0.2, offsetRadius: 0.7 })}
     </svg>
   `
 }
 
-function gear ({ offsetRadius, toothLength, toothWidth }) {
+function turbine ({ offsetRadius, bladeLength, bladeWidth }) {
   return `
     <style type="text/css">
-      .gear {
+      .turbine {
         stroke: black;
-        stroke-width: ${toothLength / 20};
+        stroke-width: ${bladeLength / 20};
       }
-      .gear-tooth {
+      .turbine-blade {
         fill: purple;
       }
     </style>
-    <g class="gear">
+    <g class="turbine">
       ${range({ start: 0, stop: 1, step: 1 / 8 })
-    .map(index => gearTooth({
-      angle: (1 / 16 + index) * 2 * Math.PI,
-      offset: offsetRadius,
-      length: toothLength,
-      width: toothWidth
-    }))
-    .join('\n')
-}
+        .map(index => turbineBlade({
+          angle: (1 / 16 + index) * 2 * Math.PI,
+          offset: offsetRadius,
+          length: bladeLength,
+          width: bladeWidth
+        }))
+        .join('\n')
+      }
     </g>
   `
 }
 
-function gearTooth ({ angle, offset, length, width }) {
+function turbineBlade ({ angle, offset, length, width }) {
   return `
     <g
-      class="gear-tooth"
+      class="turbine-blade"
       transform="rotate(${angle * 180 / Math.PI})"
     >
-      <rect x="${-width / 2}" y="${offset}" height="${length}" width="${width}" />
+      <path
+        d="
+          M ${-width / 2},${offset}
+          a ${width},${length} 0 1,0 ${width},0
+          z
+        "
+      />
     </g>
   `
+  // d="M 66.901772,258.06844 A 38.175598,233.58929 0 0 1 105.06843,24.479163 38.175598,233.58929 0 0 1 143.25296,257.95908 l -38.17559,0.10937 z" />
 }
 
 function plants ({ size, offsetRadius }) {
