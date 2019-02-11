@@ -94,7 +94,7 @@ function plant ({ size, angle, offsetRadius }) {
       <path class="plant-stem"
         d="
           M 0,0
-          L 0,${size * 1.2}
+          L 0,${size * 0.8}
         "
       />
       ${plantStem({ size, direction: 1 })}
@@ -109,8 +109,8 @@ function plantStem ({ size, direction }) {
   return `
     <path class="plant-stem"
       d="
-        M 0,${size * 1.2}
-        C 0,${size * 0.8} 0,${size * 1.6} ${size * direction * 0.3},${size * 1.8}
+        M 0,${size * 0.8}
+        C 0,${size * 0.8} 0,${size * 1.1} ${size * direction * 0.3},${size * 1.6}
       "
     />
   `
@@ -120,9 +120,9 @@ function plantLeaf ({ size, direction }) {
   return `
     <path class="plant-leaf"
       d="
-        M ${size * direction * 0.3},${size * 1.8}
-        a ${size},${size} -45 0,0 ${size * direction * 0.8},${size * 0.6}
-        A ${size},${size} -45 0,0 ${size * direction * 0.3},${size * 1.8}
+        M ${size * direction * 0.3},${size * 1.6}
+        a ${size},${size} 0 0,1 ${size * direction * 0.6},${size * 0.9}
+        A ${size},${size} 0 0,1 ${size * direction * 0.3},${size * 1.6}
       "
     />
   `
