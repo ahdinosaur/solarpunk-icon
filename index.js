@@ -7,8 +7,8 @@ function solarpunkIcon () {
       xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="-1 -1 2 2"
     >
-      ${plants({ size: 0.25, offsetRadius: 0.2 })}
-      ${turbine({ offsetRadius: 0.05, bladeLength: 0.3, bladeWidth: 0.08 })}
+      ${plants({ size: 0.25, offsetRadius: 0.1 })}
+      ${turbine({ offsetRadius: 0.1, bladeLength: 0.22, bladeWidth: 0.08 })}
       ${moons({ moonRadius: 0.2, offsetRadius: 0.7 })}
     </svg>
   `
@@ -48,7 +48,7 @@ function turbineBlade ({ angle, offset, length, width }) {
       <path
         d="
           M ${-width / 2},${offset}
-          a ${width},${length} 0 1,0 ${width},0
+          a ${width * (3/4)},${length * (4/3)} 0 1,0 ${width},0
           z
         "
       />
@@ -94,7 +94,7 @@ function plant ({ size, angle, offsetRadius }) {
       <path class="plant-stem"
         d="
           M 0,0
-          L 0,${size}
+          L 0,${size * 1.2}
         "
       />
       ${plantStem({ size, direction: 1 })}
@@ -109,8 +109,8 @@ function plantStem ({ size, direction }) {
   return `
     <path class="plant-stem"
       d="
-        M 0,${size * 0.9}
-        C 0,${size * 0.8} 0,${size * 1.2} ${size * direction * 0.3},${size * 1.4}
+        M 0,${size * 1.2}
+        C 0,${size * 0.8} 0,${size * 1.6} ${size * direction * 0.3},${size * 1.8}
       "
     />
   `
@@ -120,9 +120,9 @@ function plantLeaf ({ size, direction }) {
   return `
     <path class="plant-leaf"
       d="
-        M ${size * direction * 0.3},${size * 1.4}
+        M ${size * direction * 0.3},${size * 1.8}
         a ${size},${size} -45 0,0 ${size * direction * 0.8},${size * 0.6}
-        A ${size},${size} -45 0,0 ${size * direction * 0.3},${size * 1.4}
+        A ${size},${size} -45 0,0 ${size * direction * 0.3},${size * 1.8}
       "
     />
   `
